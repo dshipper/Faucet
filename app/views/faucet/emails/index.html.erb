@@ -1,0 +1,10 @@
+<h1>Scheduled Emails</h1>
+<ul>
+	<% for email in @emails %>
+		<li>Description: <%= email.description %></li>
+		To: <%= email.email %><br>
+		Function: <%= email.function %><br>
+		Time: <%= email.time.to_s %><br>
+		Sent: <%= email.sent.to_s %><br>
+	<% end %>
+</ul>

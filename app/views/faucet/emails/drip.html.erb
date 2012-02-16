@@ -1,0 +1,7 @@
+<ul>
+<% @sent.each do |email| %>
+	<li>Sent email to: <%= email.email %></li>
+	<%= email.description %>
+	<br>
+<% end %>
+</ul> 

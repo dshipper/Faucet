@@ -1,0 +1,35 @@
+/* ---------------------------- FONTS PAGE ---------------------------- */ 
+h1{
+	font: 90px Helvetica;
+	color: #303030;
+	font-weight: bold;
+}
+
+h2{
+	font: 24px Helvetica;
+	color: #4b4b4b;
+	font-weight: bold;
+}
+
+h4{
+	font: 18px Helvetica;
+	color: #4b4b4b;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+b{
+	font: 18px Helvetica;
+	color: #4b4b4b;
+	font-weight: bold;
+}
+
+body{
+	color: #4b4b4b;
+	font: 18px Helvetica;
+}
+
+p{
+	margin-top: 22px;
+	margin-bottom: 22px;
+}

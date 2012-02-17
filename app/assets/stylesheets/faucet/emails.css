@@ -1,4 +1,40 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+.column-left{
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 130px;
+}
+
+.column-right{
+	width: 400px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.float-left{
+	float: left;
+	vertical-align: top;
+	text-align: top;
+}
+
+.subhead{
+	font-size: 14px;
+	position: relative;
+	bottom: 20px;
+	left: 70px;
+}
+
+.subhead a{
+	text-decoration: none;
+	color: #54b0f0;
+}
+
+.email-header{
+	background-color: #2f2f2f;
+	padding: 10px;
+	color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-bottom: 10px;
+}

@@ -7,9 +7,9 @@ require "faucet/version"
 Gem::Specification.new do |s|
   s.name        = "faucet"
   s.version     = Faucet::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
+  s.authors     = ["Dan Shipper"]
+  s.email       = ["dshipper@gmail.com"]
+  s.homepage    = "http://www.danshipper.com"
   s.summary     = "TODO: Summary of Faucet."
   s.description = "TODO: Description of Faucet."
 
@@ -18,6 +18,9 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.1.3"
   # s.add_dependency "jquery-rails"
+
+  s.add_dependency 'zurb-foundation', "2.1.5.1"
+  s.add_dependency 'sass-rails'
 
   s.add_development_dependency "sqlite3"
 end

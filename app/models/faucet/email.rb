@@ -6,4 +6,8 @@ module Faucet
   def self.today
       (Time.now.midnight)..Time.now.end_of_day
   end
+  
+  def self.yesterday
+    (1.day.ago.midnight)..1.day.ago.end_of_day
+  end
 end

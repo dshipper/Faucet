@@ -1,7 +1,10 @@
 module Faucet
   class EmailsController < ApplicationController
     def index
-      @emails = Email.all
+      @emails_today = Email.where(:sent => false, :time => Faucet.today)
+      @emails_sent_yesterday = Email.where(:sent => true, :time => Faucet.yesterday)
+      @sent_emails = Email.where(:sent => true)
+      @unsent_emails = Email.where(:sent => false)
     end
     
     def drip

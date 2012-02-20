@@ -1,7 +1,6 @@
 Welcome to Faucet!
 ===================
 Brought to you by [Airtime for Email](http://www.airtimehq.com).
----------------------------------------
 
 faucet is a Rails gem to make drip marketing easy for SaaS startups.
 

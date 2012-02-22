@@ -17,17 +17,23 @@ Sure! We don't have delayed job so we decided to build this instead.
 
 Install
 -------
+In your Gemfile:
 
-	gem 'faucet #Gemfile
+	gem 'faucet 
 	
-	mount Faucet::Engine => "/faucet", :as => "faucet_engine" #config/routes.rb
-	
+In config/routes.rb: 
+
+	mount Faucet::Engine => "/faucet", :as => "faucet_engine" 
+This step sets up the Faucet dashboard on the /faucet route.
+
+In your terminal window:
+
 	$ rake faucet:install:migrations
 	$ rake db:migrate
 
 To schedule an email:
 
-	Faucet::Email.create!(:time  => 2.days.from.now,  #this goes in your controller (maybe right after your user signs up)
+	Faucet::Email.create!(:time  => 7.days.from.now,  #this goes in your controller (maybe right after your user signs up)
 	                      :function => "UserMailer.one_week", 
 	                      :description => "One week reminder email", 
 	                      :email => "dshipper@gmail.com")

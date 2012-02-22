@@ -34,7 +34,7 @@ In your terminal window:
 To schedule an email:
 
 	Faucet::Email.create!(:time  => 7.days.from.now,  #this goes in your controller (maybe right after your user signs up)
-	                      :function => "UserMailer.one_week", 
+	                      :function => "UserMailer.one_week(:email => 'dshipper@gmail.com', :plan => 'Premium')", 
 	                      :description => "One week reminder email", 
 	                      :email => "dshipper@gmail.com")
 

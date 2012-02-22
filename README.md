@@ -19,7 +19,7 @@ Install
 -------
 In your Gemfile:
 
-	gem 'faucet 
+	gem 'faucet'
 	
 In config/routes.rb: 
 

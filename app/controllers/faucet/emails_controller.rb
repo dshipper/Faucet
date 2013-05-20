@@ -8,12 +8,11 @@ module Faucet
     end
     
     def drip
-      puts "called"
       @emails = Email.where(:sent => false, :time => Faucet.today)
       @sent = []
       @emails.each do |email|
-        puts "Running: #{email.description}."
-        puts eval("::" + email.function)
+        logger.info "Running: #{email.description}."
+        logger.info eval("::" + email.function)
         
         @sent << email
         

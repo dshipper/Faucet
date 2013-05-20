@@ -1,9 +1,8 @@
-@import "foundation.css";
 @import "reset.css";
 @import "emails.css";
 @import "fonts.css";
 
-.content{
+.content {
 	width: 900px;
 	margin: auto;
 	margin-top: 20px;
